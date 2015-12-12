@@ -1,0 +1,8 @@
+Running
+--------
+
+Remember to add jade.jar to CLASSPATH
+
+    javac *.java
+    java jade.Boot -agents a1:examples.bookTrading.BookBuyerAgent'(newtitle)'
+    java jade.Boot -container -agents a2:examples.bookTrading.BookSellerAgent

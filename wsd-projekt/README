@@ -1,0 +1,3 @@
+Najpierw nale¿y uruchomiæ MainContainer jako main class  - to stawia g³ówny kontener.
+Nastêpnie tak samo uruchomiæ JadeContainer.
+W tej klasie mo¿na tworzyæ agenty.

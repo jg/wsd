@@ -41,21 +41,24 @@ public class BatTracker extends Agent {
 			
 			@Override
 			protected void onTick() {
-				// TODO Auto-generated method stub
+				//zachowanie lokalizacji i timestampa
 				x += generator.nextFloat()-0.5;
 				y += generator.nextFloat()-0.5;
 				Calendar cal = Calendar.getInstance();
 				Date currentTime = cal.getTime();
 				gps.add(new GPSEntry(x, y, currentTime));
+				//jesli zbiora sie dane - utworz paczke i dystrybuuj ja
 				if(gps.size()>10){
 					GPSPackage pack = new GPSPackage(getAID().getName(), gps);
 					packages.add(pack);
 					gps.clear();
+					//tworzenie requesta odebrania paczki
 					ACLMessage m = new ACLMessage(ACLMessage.REQUEST);
 					String receiver = neighbors.get(generator.nextInt(4));
 					//System.out.println("WYBRAŁEM "+receiver);
 					m.addReceiver(new AID(receiver,AID.ISGUID));
 					try {
+						//indeks paczki
 						m.setContentObject(packages.size()-1);
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
@@ -66,15 +69,17 @@ public class BatTracker extends Agent {
 				}
 			}
 		});
-		//zachowanie odpowiedzialne za obsluge wiadomosci 'Hello'
+		//zachowanie odpowiedzialne za obsluge wiadomosci 'Hello' i odbieranie danych
 		addBehaviour(new CyclicBehaviour() {
 			MessageTemplate mt = MessageTemplate.MatchPerformative(ACLMessage.INFORM);
 			@Override
 			public void action() {
 				ACLMessage message = receive(mt);
 				if(message!=null){
+					//jesli odebrano dane
 					if(message.getLanguage()=="data"){
 						try {
+							//zapisz odebrana paczke do swojego zbioru
 							GPSPackage pack = (GPSPackage)message.getContentObject();
 							packages.add(pack);
 						} catch (UnreadableException e) {
@@ -83,10 +88,12 @@ public class BatTracker extends Agent {
 						}
 						
 					}
+					//jesli wiadmosc Hello
 					else{
 						//System.out.println("DOSTAŁEM");
 						String name = message.getContent();
 						//System.out.println("od " + name);
+						//jezeli nie jest jeszcze w znanych sasiadach odpowiedz hello
 						if(!neighbors.contains(name)){
 							neighbors.add(name);
 							ACLMessage m = message.createReply();
@@ -108,6 +115,7 @@ public class BatTracker extends Agent {
 			protected void onTick() {
 				System.out.println("BIP "+getAID().getName());
 				ACLMessage m = new ACLMessage(ACLMessage.INFORM);
+				//obecnie wysylane do wszystkich
 				for(int i=0;i<4;i++){
 					m.addReceiver(new AID("Bat"+i+"@192.168.0.12:1099/JADE", AID.ISGUID));
 				}
@@ -124,9 +132,11 @@ public class BatTracker extends Agent {
 				MessageTemplate mt = MessageTemplate.or(MessageTemplate.MatchPerformative(ACLMessage.REQUEST), MessageTemplate.MatchPerformative(ACLMessage.AGREE));
 				ACLMessage message = receive(mt);
 				if(message!=null){
+					//jesli otrzymano requesta
 					if(message.getPerformative()==ACLMessage.REQUEST){
 						System.out.println("DOSTAŁEM REQUESTA OD "+message.getSender());
 						ACLMessage reply = message.createReply();
+						//na razie zawsze sie zgadza
 						reply.setPerformative(ACLMessage.AGREE);
 						try {
 							reply.setContentObject(message.getContentObject());
@@ -139,6 +149,7 @@ public class BatTracker extends Agent {
 						}
 						send(reply);
 					}
+					//jesli otrzymano akceptacje
 					else if(message.getPerformative()==ACLMessage.AGREE){
 						ACLMessage reply = message.createReply();
 						try {
@@ -150,6 +161,7 @@ public class BatTracker extends Agent {
 								// TODO Auto-generated catch block
 								e.printStackTrace();
 							}
+							//ustaw jezyk na data aby odroznic od Hello
 							reply.setLanguage("data");
 							System.out.println(getAID().getName() + "PRZESYLA DANE DO" + reply.getAllReceiver());
 							send(reply);

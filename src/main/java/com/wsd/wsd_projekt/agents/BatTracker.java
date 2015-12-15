@@ -64,7 +64,7 @@ public class BatTracker extends Agent {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-					//System.out.println("REQUEST OD "+getAID().getName());
+					System.out.println("REQUEST OD "+getAID().getName() + " DO " + receiver);
 					send(m);
 				}
 			}
@@ -90,7 +90,7 @@ public class BatTracker extends Agent {
 					}
 					//jesli wiadmosc Hello
 					else{
-						//System.out.println("DOSTAŁEM");
+						System.out.println(getAID().getName() + " OTRZYMAŁ HELLO OD " + message.getSender().getName() );
 						String name = message.getContent();
 						//System.out.println("od " + name);
 						//jezeli nie jest jeszcze w znanych sasiadach odpowiedz hello
@@ -113,11 +113,13 @@ public class BatTracker extends Agent {
 			
 			@Override
 			protected void onTick() {
-				System.out.println("BIP "+getAID().getName());
+				//System.out.println("BIP "+getAID().getName());
 				ACLMessage m = new ACLMessage(ACLMessage.INFORM);
 				//obecnie wysylane do wszystkich
 				for(int i=0;i<4;i++){
-					m.addReceiver(new AID("Bat"+i+"@192.168.0.12:1099/JADE", AID.ISGUID));
+					String name = "Bat"+i+"@192.168.0.12:1099/JADE";
+					if(name!=getAID().getName())
+						m.addReceiver(new AID(name, AID.ISGUID));
 				}
 				m.setContent(getAID().getName());;
 				send(m);
@@ -134,7 +136,7 @@ public class BatTracker extends Agent {
 				if(message!=null){
 					//jesli otrzymano requesta
 					if(message.getPerformative()==ACLMessage.REQUEST){
-						System.out.println("DOSTAŁEM REQUESTA OD "+message.getSender());
+						System.out.println(getAID().getName() + " OTRZYMAŁ REQUEST OD "+message.getSender().getName());
 						ACLMessage reply = message.createReply();
 						//na razie zawsze sie zgadza
 						reply.setPerformative(ACLMessage.AGREE);
@@ -163,7 +165,7 @@ public class BatTracker extends Agent {
 							}
 							//ustaw jezyk na data aby odroznic od Hello
 							reply.setLanguage("data");
-							System.out.println(getAID().getName() + "PRZESYLA DANE DO" + reply.getAllReceiver());
+							System.out.println(getAID().getName() + " PRZESYLA DANE DO " + message.getSender().getName());
 							send(reply);
 						} catch (UnreadableException e1) {
 							// TODO Auto-generated catch block

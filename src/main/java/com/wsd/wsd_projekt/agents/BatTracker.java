@@ -44,6 +44,7 @@ public class BatTracker extends Agent {
 			
 			@Override
 			protected void onTick() {
+				battery.timeTick();
 				//zachowanie lokalizacji i timestampa
 				x += generator.nextFloat()-0.5;
 				y += generator.nextFloat()-0.5;

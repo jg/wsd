@@ -17,19 +17,22 @@ import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
 import jade.lang.acl.UnreadableException;
 
+import com.wsd.wsd_projekt.agents.bat_tracker.Battery;
+
 public class BatTracker extends Agent {
-	
 	ArrayList<GPSEntry> gps;
 	ArrayList<GPSPackage> packages;
 	ArrayList<String> neighbors;
 	float x,y;
 	Random generator;
+	Battery battery;
 	
 	public BatTracker(){
 		generator = new Random();
 		gps = new ArrayList<GPSEntry>();
 		neighbors = new ArrayList<String>();
 		packages = new ArrayList<GPSPackage>();
+		battery = new Battery();
 		x = generator.nextFloat()*100;
 		y = generator.nextFloat()*100;
 	}
@@ -128,7 +131,6 @@ public class BatTracker extends Agent {
 		
 		//negocjacja przeslania danych
 		addBehaviour(new CyclicBehaviour() {
-			
 			@Override
 			public void action() {
 				MessageTemplate mt = MessageTemplate.or(MessageTemplate.MatchPerformative(ACLMessage.REQUEST), MessageTemplate.MatchPerformative(ACLMessage.AGREE));

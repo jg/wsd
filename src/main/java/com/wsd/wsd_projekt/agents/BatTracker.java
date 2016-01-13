@@ -32,7 +32,7 @@ public class BatTracker extends Agent {
 		gps = new ArrayList<GPSEntry>();
 		neighbors = new ArrayList<String>();
 		packages = new ArrayList<GPSPackage>();
-		battery = new Battery();
+		battery = new Battery(generator.nextInt(Battery.MAX_LEVEL));
 		x = generator.nextFloat()*100;
 		y = generator.nextFloat()*100;
 	}

@@ -19,6 +19,7 @@ import jade.lang.acl.UnreadableException;
 
 import com.wsd.wsd_projekt.agents.bat_tracker.Battery;
 import com.wsd.wsd_projekt.agents.bat_tracker.SendGpsDataBehaviour;
+import com.wsd.wsd_projekt.agents.bat_tracker.HandleIncomingMessagesBehaviour;
 
 public class BatTracker extends Agent {
 	ArrayList<GPSEntry> gps;
@@ -82,6 +83,18 @@ public class BatTracker extends Agent {
         gps.clear();
     }
 
+    public void addPackage(GPSPackage pkg) {
+        packages.add(pkg);
+    }
+
+    public boolean isKnownNeighbour(String name) {
+        return neighbors.contains(name);
+    }
+
+    public void addNeighbor(String name) {
+        neighbors.add(name);
+    }
+
 	protected void setup(){
 		System.out.println("TWORZENIE AGENTA");
 
@@ -89,44 +102,8 @@ public class BatTracker extends Agent {
         addBehaviour(new SendGpsDataBehaviour(this, new Long(1000)));
 
         //zachowanie odpowiedzialne za obsluge wiadomosci 'Hello' i odbieranie danych
-        addBehaviour(new CyclicBehaviour() {
-            MessageTemplate mt = MessageTemplate.MatchPerformative(ACLMessage.INFORM);
-            @Override
-            public void action() {
-                ACLMessage message = receive(mt);
-                if(message!=null){
-                    //jesli odebrano dane
-                    if(message.getLanguage()=="data"){
-                        try {
-                            //zapisz odebrana paczke do swojego zbioru
-							GPSPackage pack = (GPSPackage)message.getContentObject();
-							packages.add(pack);
-						} catch (UnreadableException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
-						
-					}
-					//jesli wiadmosc Hello
-					else{
-						System.out.println(getAID().getName() + " OTRZYMAŁ HELLO OD " + message.getSender().getName() );
-						String name = message.getContent();
-						//System.out.println("od " + name);
-						//jezeli nie jest jeszcze w znanych sasiadach odpowiedz hello
-						if(!neighbors.contains(name)){
-							neighbors.add(name);
-							ACLMessage m = message.createReply();
-							m.setPerformative(ACLMessage.INFORM);
-							m.setContent(getAID().getName());;
-							send(m);
-						}
-					}
-				}
-				else{
-					block();
-				}
-			}
-		});
+        addBehaviour(new HandleIncomingMessagesBehaviour(this));
+
 		//cykliczne wysylanie wiadmosci 'Hello'
 		addBehaviour(new TickerBehaviour(this,1000) {
 			

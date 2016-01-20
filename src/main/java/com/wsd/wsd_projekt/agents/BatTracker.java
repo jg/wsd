@@ -18,12 +18,13 @@ import jade.lang.acl.MessageTemplate;
 import jade.lang.acl.UnreadableException;
 
 import com.wsd.wsd_projekt.agents.bat_tracker.Battery;
+import com.wsd.wsd_projekt.agents.bat_tracker.SendGpsDataBehaviour;
 
 public class BatTracker extends Agent {
 	ArrayList<GPSEntry> gps;
 	ArrayList<GPSPackage> packages;
 	ArrayList<String> neighbors;
-	float x,y;
+	Float x,y;
 	Random generator;
 	Battery battery;
 	
@@ -37,53 +38,67 @@ public class BatTracker extends Agent {
 		y = generator.nextFloat()*100;
 	}
 
+    /** Decrease battery level */
+    public void batteryTick() {
+        battery.timeTick();
+    }
+
+    public AID pickNeighbour() {
+        String receiver = neighbors.get(generator.nextInt(4));
+        return new AID(receiver, AID.ISGUID);
+    }
+
+    /** True if enough gps entries are present in gps package */
+    public boolean isGpsPackReady() {
+        return gps.size() > 10;
+    }
+
+    public int gpsPackageCount() {
+        return packages.size();
+    }
+
+    /** Generates and adds new gps entry/package
+     *  @return {Boolean} true if new package was created
+     */
+    public boolean gpsTick() {
+        x += generator.nextFloat()- new Float(0.5);
+        y += generator.nextFloat()- new Float(0.5);
+        Calendar cal = Calendar.getInstance();
+        Date currentTime = cal.getTime();
+        gps.add(new GPSEntry(x, y, currentTime));
+
+        if ( isGpsPackReady() ) {
+            createGpsPackage();
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /** Collects entries into a new gps package, clear entry array list */
+    private void createGpsPackage() {
+        GPSPackage pack = new GPSPackage(getName(), gps);
+        packages.add(pack);
+        gps.clear();
+    }
+
 	protected void setup(){
 		System.out.println("TWORZENIE AGENTA");
+
 		//symulacja dzialania nadajnika - rejestrowanie zmieniajacej sie pozycji
-		addBehaviour(new TickerBehaviour(this,100) {
-			
-			@Override
-			protected void onTick() {
-				battery.timeTick();
-				//zachowanie lokalizacji i timestampa
-				x += generator.nextFloat()-0.5;
-				y += generator.nextFloat()-0.5;
-				Calendar cal = Calendar.getInstance();
-				Date currentTime = cal.getTime();
-				gps.add(new GPSEntry(x, y, currentTime));
-				//jesli zbiora sie dane - utworz paczke i dystrybuuj ja
-				if(gps.size()>10){
-					GPSPackage pack = new GPSPackage(getAID().getName(), gps);
-					packages.add(pack);
-					gps.clear();
-					//tworzenie requesta odebrania paczki
-					ACLMessage m = new ACLMessage(ACLMessage.REQUEST);
-					String receiver = neighbors.get(generator.nextInt(4));
-					//System.out.println("WYBRAŁEM "+receiver);
-					m.addReceiver(new AID(receiver,AID.ISGUID));
-					try {
-						//indeks paczki
-						m.setContentObject(packages.size()-1);
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-					System.out.println("REQUEST OD "+getAID().getName() + " DO " + receiver);
-					send(m);
-				}
-			}
-		});
-		//zachowanie odpowiedzialne za obsluge wiadomosci 'Hello' i odbieranie danych
-		addBehaviour(new CyclicBehaviour() {
-			MessageTemplate mt = MessageTemplate.MatchPerformative(ACLMessage.INFORM);
-			@Override
-			public void action() {
-				ACLMessage message = receive(mt);
-				if(message!=null){
-					//jesli odebrano dane
-					if(message.getLanguage()=="data"){
-						try {
-							//zapisz odebrana paczke do swojego zbioru
+        addBehaviour(new SendGpsDataBehaviour(this, new Long(1000)));
+
+        //zachowanie odpowiedzialne za obsluge wiadomosci 'Hello' i odbieranie danych
+        addBehaviour(new CyclicBehaviour() {
+            MessageTemplate mt = MessageTemplate.MatchPerformative(ACLMessage.INFORM);
+            @Override
+            public void action() {
+                ACLMessage message = receive(mt);
+                if(message!=null){
+                    //jesli odebrano dane
+                    if(message.getLanguage()=="data"){
+                        try {
+                            //zapisz odebrana paczke do swojego zbioru
 							GPSPackage pack = (GPSPackage)message.getContentObject();
 							packages.add(pack);
 						} catch (UnreadableException e) {

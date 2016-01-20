@@ -20,6 +20,7 @@ import jade.lang.acl.UnreadableException;
 import com.wsd.wsd_projekt.agents.bat_tracker.Battery;
 import com.wsd.wsd_projekt.agents.bat_tracker.SendGpsDataBehaviour;
 import com.wsd.wsd_projekt.agents.bat_tracker.HandleIncomingMessagesBehaviour;
+import com.wsd.wsd_projekt.agents.bat_tracker.SendHelloBehaviour;
 
 public class BatTracker extends Agent {
 	ArrayList<GPSEntry> gps;
@@ -105,22 +106,7 @@ public class BatTracker extends Agent {
         addBehaviour(new HandleIncomingMessagesBehaviour(this));
 
 		//cykliczne wysylanie wiadmosci 'Hello'
-		addBehaviour(new TickerBehaviour(this,1000) {
-			
-			@Override
-			protected void onTick() {
-				//System.out.println("BIP "+getAID().getName());
-				ACLMessage m = new ACLMessage(ACLMessage.INFORM);
-				//obecnie wysylane do wszystkich
-				for(int i=0;i<4;i++){
-					String name = "Bat"+i+"@192.168.0.12:1099/JADE";
-					if(name!=getAID().getName())
-						m.addReceiver(new AID(name, AID.ISGUID));
-				}
-				m.setContent(getAID().getName());;
-				send(m);
-			}
-		});
+		addBehaviour(new SendHelloBehaviour(this, new Long(1000)));
 		
 		//negocjacja przeslania danych
 		addBehaviour(new CyclicBehaviour() {

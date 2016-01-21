@@ -27,11 +27,13 @@ public class NegotiateDataTransferBehaviour extends CyclicBehaviour {
     }
 
     public void action() {
-        MessageTemplate mt = MessageTemplate.or(MessageTemplate.MatchPerformative(ACLMessage.REQUEST), MessageTemplate.MatchPerformative(ACLMessage.AGREE));
+        MessageTemplate mt =
+            MessageTemplate.or(MessageTemplate.MatchPerformative(ACLMessage.REQUEST),
+                               MessageTemplate.MatchPerformative(ACLMessage.AGREE));
         ACLMessage message = agent.receive(mt);
-        if (message!=null){
+        if (message != null){
             //jesli otrzymano requesta
-            if (message.getPerformative()==ACLMessage.REQUEST){
+            if (message.getPerformative() == ACLMessage.REQUEST){
                 System.out.println(agent.getName() + " OTRZYMAŁ REQUEST OD "+message.getSender().getName());
                 ACLMessage reply = message.createReply();
                 //na razie zawsze sie zgadza
@@ -48,7 +50,7 @@ public class NegotiateDataTransferBehaviour extends CyclicBehaviour {
                 agent.send(reply);
             }
             //jesli otrzymano akceptacje
-            else if(message.getPerformative()==ACLMessage.AGREE){
+            else if(message.getPerformative() == ACLMessage.AGREE){
                 ACLMessage reply = message.createReply();
                 try {
                     Integer index = (Integer)message.getContentObject();

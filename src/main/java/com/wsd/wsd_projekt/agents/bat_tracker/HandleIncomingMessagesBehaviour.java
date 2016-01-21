@@ -4,7 +4,6 @@ import jade.core.behaviours.TickerBehaviour;
 import jade.core.Agent;
 import java.lang.Float;
 import java.util.Random;
-import java.util.Calendar;
 import java.util.Date;
 import com.wsd.wsd_projekt.GPSEntry;
 import com.wsd.wsd_projekt.GPSPackage;

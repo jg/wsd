@@ -102,7 +102,7 @@ public class BatTracker extends Agent {
     }
 
 	protected void setup(){
-		System.out.println("TWORZENIE AGENTA");
+		System.out.println("Tworzenie agenta: " + getName());
 
 		//symulacja dzialania nadajnika - rejestrowanie zmieniajacej sie pozycji
         addBehaviour(new SendGpsDataBehaviour(this, new Long(1000)));

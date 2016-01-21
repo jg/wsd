@@ -1,7 +1,7 @@
 package com.wsd.wsd_projekt.agents.bat_tracker;
 
 /** Represents battery levels. Level is an integer between 0 and 100 */
-public class Battery {
+public class Battery implements java.io.Serializable {
 	int level;
 	public static final int MAX_LEVEL = 100;
 
@@ -22,4 +22,8 @@ public class Battery {
 			level -= 1;
 		}
 	}
+
+    public int getLevel() {
+        return level;
+    }
 }

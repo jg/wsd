@@ -22,6 +22,8 @@ import com.wsd.wsd_projekt.agents.bat_tracker.SendGpsDataBehaviour;
 import com.wsd.wsd_projekt.agents.bat_tracker.HandleIncomingMessagesBehaviour;
 import com.wsd.wsd_projekt.agents.bat_tracker.SendHelloBehaviour;
 import com.wsd.wsd_projekt.agents.bat_tracker.NegotiateDataTransferBehaviour;
+import com.wsd.wsd_projekt.agents.bat_tracker.SendAgentStateBehaviour;
+import com.wsd.wsd_projekt.agents.bat_tracker.State;
 
 public class BatTracker extends Agent {
 	ArrayList<GPSEntry> gps;
@@ -40,6 +42,10 @@ public class BatTracker extends Agent {
 		x = generator.nextFloat()*100;
 		y = generator.nextFloat()*100;
 	}
+
+    public State getCustomState() {
+        return new State(getName(), battery);
+    }
 
     /** Decrease battery level */
     public void batteryTick() {
@@ -104,16 +110,19 @@ public class BatTracker extends Agent {
 	protected void setup(){
 		System.out.println("Tworzenie agenta: " + getName());
 
+        /** Send agent state to Logger agent so it can display it to the user */
+        addBehaviour(new SendAgentStateBehaviour(this, new Long(1000)));
+
 		//symulacja dzialania nadajnika - rejestrowanie zmieniajacej sie pozycji
-        addBehaviour(new SendGpsDataBehaviour(this, new Long(1000)));
+        // addBehaviour(new SendGpsDataBehaviour(this, new Long(1000)));
 
         //zachowanie odpowiedzialne za obsluge wiadomosci 'Hello' i odbieranie danych
-        addBehaviour(new HandleIncomingMessagesBehaviour(this));
+        // addBehaviour(new HandleIncomingMessagesBehaviour(this));
 
 		//cykliczne wysylanie wiadmosci 'Hello'
-		addBehaviour(new SendHelloBehaviour(this, new Long(1000)));
+		// addBehaviour(new SendHelloBehaviour(this, new Long(1000)));
 		
 		//negocjacja przeslania danych
-		addBehaviour(new NegotiateDataTransferBehaviour(this));
+		// addBehaviour(new NegotiateDataTransferBehaviour(this));
 	}
 }

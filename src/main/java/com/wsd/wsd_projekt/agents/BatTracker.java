@@ -13,15 +13,21 @@ import jade.core.AID;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.core.behaviours.TickerBehaviour;
+import jade.domain.FIPANames;
+import jade.domain.FIPAAgentManagement.FailureException;
+import jade.domain.FIPAAgentManagement.NotUnderstoodException;
+import jade.domain.FIPAAgentManagement.RefuseException;
+import jade.proto.ContractNetInitiator;
+import jade.proto.ContractNetResponder;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
 import jade.lang.acl.UnreadableException;
 
 import com.wsd.wsd_projekt.agents.bat_tracker.Battery;
+import com.wsd.wsd_projekt.agents.bat_tracker.Proposal;
 import com.wsd.wsd_projekt.agents.bat_tracker.SendGpsDataBehaviour;
 import com.wsd.wsd_projekt.agents.bat_tracker.HandleIncomingMessagesBehaviour;
 import com.wsd.wsd_projekt.agents.bat_tracker.SendHelloBehaviour;
-import com.wsd.wsd_projekt.agents.bat_tracker.NegotiateDataTransferBehaviour;
 import com.wsd.wsd_projekt.agents.bat_tracker.SendAgentStateBehaviour;
 import com.wsd.wsd_projekt.agents.bat_tracker.State;
 
@@ -64,6 +70,18 @@ public class BatTracker extends Agent {
 
     public int gpsPackageCount() {
         return packages.size();
+    }
+    
+    public Float getX() {
+		return x;
+	}
+
+	public Float getY() {
+		return y;
+	}
+	
+	public ArrayList<String> getNeighbors(){
+    	return neighbors;
     }
 
     /** Generates and adds new gps entry/package
@@ -121,8 +139,58 @@ public class BatTracker extends Agent {
 
 		//cykliczne wysylanie wiadmosci 'Hello'
 		// addBehaviour(new SendHelloBehaviour(this, new Long(1000)));
-		
-		//negocjacja przeslania danych
-		// addBehaviour(new NegotiateDataTransferBehaviour(this));
+        
+        MessageTemplate template = MessageTemplate.and(
+        		MessageTemplate.MatchProtocol(FIPANames.InteractionProtocol.FIPA_CONTRACT_NET),
+        		MessageTemplate.MatchPerformative(ACLMessage.CFP) );
+        		addBehaviour(new ContractNetResponder(this, template){
+        			protected ACLMessage prepareResponse(ACLMessage cfp) throws NotUnderstoodException, RefuseException {
+        				System.out.println("Agent "+getLocalName()+": CFP received from "+cfp.getSender().getName()+". Action is "+cfp.getContent());
+        				if (!battery.isBatteryLow() ) {
+        					// We provide a proposal
+        					Proposal proposal = new Proposal(battery.getLevel(),x,y);
+        					System.out.println("Agent "+getLocalName()+": Proposing "+proposal);
+        					ACLMessage propose = cfp.createReply();
+        					propose.setPerformative(ACLMessage.PROPOSE);
+        					try {
+        						propose.setContentObject(propose);
+        					} catch (IOException e) {
+        						// TODO Auto-generated catch block
+        						e.printStackTrace();
+        					}
+        					return propose;
+        				}
+        				else{
+        					System.out.println("Agent "+getLocalName()+": Refuse");
+        					ACLMessage refuse = cfp.createReply();
+        					refuse.setPerformative(ACLMessage.REFUSE);
+        					return refuse;
+        					
+        				}
+        			
+        			}
+        			
+        			protected ACLMessage prepareResultNotification(ACLMessage cfp, ACLMessage propose,ACLMessage accept) throws FailureException {
+        				System.out.println("Agent "+getLocalName()+": Proposal accepted");
+        				GPSPackage pack;
+        				ACLMessage inform = accept.createReply();
+        				try {
+        					pack = (GPSPackage)accept.getContentObject();
+        					addPackage(pack);
+        					
+        					inform.setPerformative(ACLMessage.INFORM);
+        					
+        				} catch (UnreadableException e) {
+        					// TODO Auto-generated catch block
+        					e.printStackTrace();
+        				}
+        				return inform;
+        				
+        			}
+        			
+        			protected void handleRejectProposal(ACLMessage reject) {
+        				System.out.println("Agent "+getLocalName()+": Proposal rejected");
+        			}
+        		});
 	}
 }

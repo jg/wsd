@@ -1,0 +1,1959 @@
+agent1 TIMESTAMP: 15:33:04 24.01.2016: 
+ x: 86.7845 y: 52.915348
+ battery: 53
+ neighbors (8): agent2, agent3, agent4, agent1, Bat3, Bat0, Bat1, Bat2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:33:00 24.01.2016, 86.20624, 53.1837]
+  [15:33:00 24.01.2016, 86.08377, 52.983547]
+  [15:33:01 24.01.2016, 86.28434, 53.31125]
+  [15:33:01 24.01.2016, 86.63208, 53.031113]
+  [15:33:02 24.01.2016, 86.551025, 52.757133]
+  [15:33:02 24.01.2016, 86.84626, 52.711]
+  [15:33:03 24.01.2016, 86.57113, 52.428875]
+  [15:33:03 24.01.2016, 86.7845, 52.915348]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (3) 
+   {
+     [15:33:04 24.01.2016, 13453.0, 4345345.0]
+     [15:33:04 24.01.2016, 2345.0, 5345.0]
+     [15:33:04 24.01.2016, 3435.0, 6345.0]
+   }
+  ]
+  [agent1 (3) 
+   {
+     [15:33:04 24.01.2016, 13453.0, 4345345.0]
+     [15:33:04 24.01.2016, 2345.0, 5345.0]
+     [15:33:04 24.01.2016, 3435.0, 6345.0]
+   }
+  ]
+
+agent2 TIMESTAMP: 15:33:05 24.01.2016: 
+ x: 28.519806 y: 83.30651
+ battery: 62
+ neighbors (8): agent2, agent3, agent1, agent4, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:33:05 24.01.2016, 28.519806, 83.30651]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (3) 
+   {
+     [15:33:05 24.01.2016, 13453.0, 4345345.0]
+     [15:33:05 24.01.2016, 2345.0, 5345.0]
+     [15:33:05 24.01.2016, 3435.0, 6345.0]
+   }
+  ]
+  [agent2 (3) 
+   {
+     [15:33:05 24.01.2016, 13453.0, 4345345.0]
+     [15:33:05 24.01.2016, 2345.0, 5345.0]
+     [15:33:05 24.01.2016, 3435.0, 6345.0]
+   }
+  ]
+  [agent2 (3) 
+   {
+     [15:33:05 24.01.2016, 13453.0, 4345345.0]
+     [15:33:05 24.01.2016, 2345.0, 5345.0]
+     [15:33:05 24.01.2016, 3435.0, 6345.0]
+   }
+  ]
+
+agent4 TIMESTAMP: 15:33:05 24.01.2016: 
+ x: 3.518641 y: 37.86477
+ battery: 14
+ neighbors (3): agent2, agent3, agent1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:33:00 24.01.2016, 3.8944607, 37.678978]
+  [15:33:00 24.01.2016, 4.176746, 37.735268]
+  [15:33:01 24.01.2016, 3.7952697, 37.618298]
+  [15:33:01 24.01.2016, 3.4163926, 37.375324]
+  [15:33:02 24.01.2016, 3.3380747, 37.123066]
+  [15:33:02 24.01.2016, 3.2227752, 37.267044]
+  [15:33:03 24.01.2016, 3.551283, 37.1643]
+  [15:33:03 24.01.2016, 3.1720605, 37.253246]
+  [15:33:04 24.01.2016, 3.3523, 37.589447]
+  [15:33:04 24.01.2016, 3.518641, 37.86477]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent4 (3) 
+   {
+     [15:33:05 24.01.2016, 13453.0, 4345345.0]
+     [15:33:05 24.01.2016, 2345.0, 5345.0]
+     [15:33:05 24.01.2016, 3435.0, 6345.0]
+   }
+  ]
+  [agent4 (3) 
+   {
+     [15:33:05 24.01.2016, 13453.0, 4345345.0]
+     [15:33:05 24.01.2016, 2345.0, 5345.0]
+     [15:33:05 24.01.2016, 3435.0, 6345.0]
+   }
+  ]
+
+agent1 TIMESTAMP: 15:38:19 24.01.2016: 
+ x: 55.83057 y: 23.534012
+ battery: 0
+ neighbors (8): agent4, agent1, agent2, agent3, Bat0, Bat1, Bat3, Bat2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:38:15 24.01.2016, 54.796043, 22.670218]
+  [15:38:16 24.01.2016, 54.833923, 23.091362]
+  [15:38:16 24.01.2016, 55.167854, 23.498665]
+  [15:38:17 24.01.2016, 55.286827, 23.83823]
+  [15:38:17 24.01.2016, 55.2661, 23.705952]
+  [15:38:18 24.01.2016, 55.382088, 23.755867]
+  [15:38:18 24.01.2016, 55.5972, 24.153515]
+  [15:38:19 24.01.2016, 55.86926, 23.91346]
+  [15:38:19 24.01.2016, 55.83057, 23.534012]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent4 TIMESTAMP: 15:42:25 24.01.2016: 
+ x: 21.269524 y: 14.731914
+ battery: 67
+ neighbors (0): 
+ agent GPS [timestamp, latitude, longitude]:
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent1 TIMESTAMP: 15:42:25 24.01.2016: 
+ x: 99.59647 y: 24.535244
+ battery: 50
+ neighbors (0): 
+ agent GPS [timestamp, latitude, longitude]:
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent2 TIMESTAMP: 15:42:25 24.01.2016: 
+ x: 72.1827 y: 70.926865
+ battery: 68
+ neighbors (0): 
+ agent GPS [timestamp, latitude, longitude]:
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent3 TIMESTAMP: 15:42:25 24.01.2016: 
+ x: 41.502388 y: 21.98829
+ battery: 55
+ neighbors (0): 
+ agent GPS [timestamp, latitude, longitude]:
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent4 TIMESTAMP: 15:42:26 24.01.2016: 
+ x: 21.452478 y: 14.452477
+ battery: 66
+ neighbors (3): agent3, agent1, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 21.458853, 14.932136]
+  [15:42:25 24.01.2016, 21.452478, 14.452477]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent1 TIMESTAMP: 15:42:26 24.01.2016: 
+ x: 100.188034 y: 24.144142
+ battery: 49
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 100.023575, 24.09114]
+  [15:42:25 24.01.2016, 100.188034, 24.144142]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent2 TIMESTAMP: 15:42:26 24.01.2016: 
+ x: 72.444305 y: 71.11933
+ battery: 67
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 72.255325, 71.089035]
+  [15:42:25 24.01.2016, 72.444305, 71.11933]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent3 TIMESTAMP: 15:42:26 24.01.2016: 
+ x: 41.337093 y: 22.781586
+ battery: 54
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 41.708904, 22.39683]
+  [15:42:25 24.01.2016, 41.337093, 22.781586]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent1 TIMESTAMP: 15:42:27 24.01.2016: 
+ x: 99.96757 y: 24.373219
+ battery: 48
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 100.023575, 24.09114]
+  [15:42:25 24.01.2016, 100.188034, 24.144142]
+  [15:42:26 24.01.2016, 100.25905, 24.42447]
+  [15:42:26 24.01.2016, 99.96757, 24.373219]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent4 TIMESTAMP: 15:42:27 24.01.2016: 
+ x: 21.081217 y: 14.635833
+ battery: 65
+ neighbors (3): agent3, agent1, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 21.458853, 14.932136]
+  [15:42:25 24.01.2016, 21.452478, 14.452477]
+  [15:42:26 24.01.2016, 21.35832, 14.635358]
+  [15:42:26 24.01.2016, 21.081217, 14.635833]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent2 TIMESTAMP: 15:42:27 24.01.2016: 
+ x: 72.106865 y: 70.98135
+ battery: 66
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 72.255325, 71.089035]
+  [15:42:25 24.01.2016, 72.444305, 71.11933]
+  [15:42:26 24.01.2016, 72.4305, 70.935425]
+  [15:42:26 24.01.2016, 72.106865, 70.98135]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent3 TIMESTAMP: 15:42:27 24.01.2016: 
+ x: 42.440575 y: 22.877253
+ battery: 52
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 41.708904, 22.39683]
+  [15:42:25 24.01.2016, 41.337093, 22.781586]
+  [15:42:26 24.01.2016, 41.330215, 23.147099]
+  [15:42:26 24.01.2016, 41.7293, 23.04087]
+  [15:42:27 24.01.2016, 41.98172, 23.06459]
+  [15:42:27 24.01.2016, 42.440575, 22.877253]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent1 TIMESTAMP: 15:42:28 24.01.2016: 
+ x: 100.76234 y: 24.678326
+ battery: 47
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 100.023575, 24.09114]
+  [15:42:25 24.01.2016, 100.188034, 24.144142]
+  [15:42:26 24.01.2016, 100.25905, 24.42447]
+  [15:42:26 24.01.2016, 99.96757, 24.373219]
+  [15:42:27 24.01.2016, 100.271576, 24.605373]
+  [15:42:27 24.01.2016, 100.76234, 24.678326]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent4 TIMESTAMP: 15:42:28 24.01.2016: 
+ x: 21.362415 y: 15.075771
+ battery: 64
+ neighbors (3): agent3, agent1, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 21.458853, 14.932136]
+  [15:42:25 24.01.2016, 21.452478, 14.452477]
+  [15:42:26 24.01.2016, 21.35832, 14.635358]
+  [15:42:26 24.01.2016, 21.081217, 14.635833]
+  [15:42:27 24.01.2016, 21.378973, 14.853229]
+  [15:42:27 24.01.2016, 21.362415, 15.075771]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent2 TIMESTAMP: 15:42:28 24.01.2016: 
+ x: 71.39911 y: 71.2094
+ battery: 65
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 72.255325, 71.089035]
+  [15:42:25 24.01.2016, 72.444305, 71.11933]
+  [15:42:26 24.01.2016, 72.4305, 70.935425]
+  [15:42:26 24.01.2016, 72.106865, 70.98135]
+  [15:42:27 24.01.2016, 71.73081, 71.08442]
+  [15:42:27 24.01.2016, 71.39911, 71.2094]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent3 TIMESTAMP: 15:42:28 24.01.2016: 
+ x: 41.93353 y: 23.397415
+ battery: 51
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 41.708904, 22.39683]
+  [15:42:25 24.01.2016, 41.337093, 22.781586]
+  [15:42:26 24.01.2016, 41.330215, 23.147099]
+  [15:42:26 24.01.2016, 41.7293, 23.04087]
+  [15:42:27 24.01.2016, 41.98172, 23.06459]
+  [15:42:27 24.01.2016, 42.440575, 22.877253]
+  [15:42:28 24.01.2016, 42.08082, 22.982477]
+  [15:42:28 24.01.2016, 41.93353, 23.397415]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent1 TIMESTAMP: 15:42:29 24.01.2016: 
+ x: 100.53781 y: 24.223684
+ battery: 46
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 100.023575, 24.09114]
+  [15:42:25 24.01.2016, 100.188034, 24.144142]
+  [15:42:26 24.01.2016, 100.25905, 24.42447]
+  [15:42:26 24.01.2016, 99.96757, 24.373219]
+  [15:42:27 24.01.2016, 100.271576, 24.605373]
+  [15:42:27 24.01.2016, 100.76234, 24.678326]
+  [15:42:28 24.01.2016, 100.87323, 24.629704]
+  [15:42:28 24.01.2016, 100.53781, 24.223684]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent2 TIMESTAMP: 15:42:29 24.01.2016: 
+ x: 71.4508 y: 71.53299
+ battery: 64
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 72.255325, 71.089035]
+  [15:42:25 24.01.2016, 72.444305, 71.11933]
+  [15:42:26 24.01.2016, 72.4305, 70.935425]
+  [15:42:26 24.01.2016, 72.106865, 70.98135]
+  [15:42:27 24.01.2016, 71.73081, 71.08442]
+  [15:42:27 24.01.2016, 71.39911, 71.2094]
+  [15:42:28 24.01.2016, 71.01416, 71.28931]
+  [15:42:28 24.01.2016, 71.4508, 71.53299]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent4 TIMESTAMP: 15:42:29 24.01.2016: 
+ x: 21.334272 y: 15.52578
+ battery: 63
+ neighbors (3): agent3, agent1, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 21.458853, 14.932136]
+  [15:42:25 24.01.2016, 21.452478, 14.452477]
+  [15:42:26 24.01.2016, 21.35832, 14.635358]
+  [15:42:26 24.01.2016, 21.081217, 14.635833]
+  [15:42:27 24.01.2016, 21.378973, 14.853229]
+  [15:42:27 24.01.2016, 21.362415, 15.075771]
+  [15:42:28 24.01.2016, 21.472202, 15.42141]
+  [15:42:28 24.01.2016, 21.334272, 15.52578]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent3 TIMESTAMP: 15:42:29 24.01.2016: 
+ x: 42.303677 y: 23.271002
+ battery: 50
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 41.708904, 22.39683]
+  [15:42:25 24.01.2016, 41.337093, 22.781586]
+  [15:42:26 24.01.2016, 41.330215, 23.147099]
+  [15:42:26 24.01.2016, 41.7293, 23.04087]
+  [15:42:27 24.01.2016, 41.98172, 23.06459]
+  [15:42:27 24.01.2016, 42.440575, 22.877253]
+  [15:42:28 24.01.2016, 42.08082, 22.982477]
+  [15:42:28 24.01.2016, 41.93353, 23.397415]
+  [15:42:29 24.01.2016, 42.049637, 23.039574]
+  [15:42:29 24.01.2016, 42.303677, 23.271002]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent1 TIMESTAMP: 15:42:30 24.01.2016: 
+ x: 100.78646 y: 24.550674
+ battery: 45
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 100.023575, 24.09114]
+  [15:42:25 24.01.2016, 100.188034, 24.144142]
+  [15:42:26 24.01.2016, 100.25905, 24.42447]
+  [15:42:26 24.01.2016, 99.96757, 24.373219]
+  [15:42:27 24.01.2016, 100.271576, 24.605373]
+  [15:42:27 24.01.2016, 100.76234, 24.678326]
+  [15:42:28 24.01.2016, 100.87323, 24.629704]
+  [15:42:28 24.01.2016, 100.53781, 24.223684]
+  [15:42:29 24.01.2016, 100.45955, 24.231712]
+  [15:42:29 24.01.2016, 100.78646, 24.550674]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent2 TIMESTAMP: 15:42:30 24.01.2016: 
+ x: 71.04295 y: 71.349205
+ battery: 63
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 72.255325, 71.089035]
+  [15:42:25 24.01.2016, 72.444305, 71.11933]
+  [15:42:26 24.01.2016, 72.4305, 70.935425]
+  [15:42:26 24.01.2016, 72.106865, 70.98135]
+  [15:42:27 24.01.2016, 71.73081, 71.08442]
+  [15:42:27 24.01.2016, 71.39911, 71.2094]
+  [15:42:28 24.01.2016, 71.01416, 71.28931]
+  [15:42:28 24.01.2016, 71.4508, 71.53299]
+  [15:42:29 24.01.2016, 71.28305, 71.49281]
+  [15:42:29 24.01.2016, 71.04295, 71.349205]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent4 TIMESTAMP: 15:42:30 24.01.2016: 
+ x: 20.762053 y: 16.154993
+ battery: 62
+ neighbors (3): agent3, agent1, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:25 24.01.2016, 21.458853, 14.932136]
+  [15:42:25 24.01.2016, 21.452478, 14.452477]
+  [15:42:26 24.01.2016, 21.35832, 14.635358]
+  [15:42:26 24.01.2016, 21.081217, 14.635833]
+  [15:42:27 24.01.2016, 21.378973, 14.853229]
+  [15:42:27 24.01.2016, 21.362415, 15.075771]
+  [15:42:28 24.01.2016, 21.472202, 15.42141]
+  [15:42:28 24.01.2016, 21.334272, 15.52578]
+  [15:42:29 24.01.2016, 21.1903, 15.975997]
+  [15:42:29 24.01.2016, 20.762053, 16.154993]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent3 TIMESTAMP: 15:42:30 24.01.2016: 
+ x: 42.94347 y: 23.954704
+ battery: 49
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 42.94347, 23.954704]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent1 TIMESTAMP: 15:42:31 24.01.2016: 
+ x: 100.7099 y: 24.718428
+ battery: 44
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 100.7099, 24.718428]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent4 TIMESTAMP: 15:42:31 24.01.2016: 
+ x: 20.424103 y: 15.833029
+ battery: 61
+ neighbors (3): agent3, agent1, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 20.424103, 15.833029]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent4 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:31 24.01.2016: 
+ x: 71.88037 y: 70.99723
+ battery: 62
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 71.88037, 70.99723]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:31 24.01.2016: 
+ x: 42.775143 y: 24.06068
+ battery: 48
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 42.94347, 23.954704]
+  [15:42:31 24.01.2016, 42.707222, 23.567722]
+  [15:42:31 24.01.2016, 42.775143, 24.06068]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent1 TIMESTAMP: 15:42:32 24.01.2016: 
+ x: 100.58551 y: 24.1214
+ battery: 43
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 100.7099, 24.718428]
+  [15:42:31 24.01.2016, 101.0239, 24.503223]
+  [15:42:31 24.01.2016, 100.58551, 24.1214]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:32 24.01.2016: 
+ x: 71.89909 y: 70.15749
+ battery: 61
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 71.88037, 70.99723]
+  [15:42:31 24.01.2016, 71.49625, 70.63013]
+  [15:42:31 24.01.2016, 71.89909, 70.15749]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+
+agent4 TIMESTAMP: 15:42:32 24.01.2016: 
+ x: 20.725037 y: 16.112747
+ battery: 60
+ neighbors (3): agent3, agent1, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 20.424103, 15.833029]
+  [15:42:31 24.01.2016, 20.369745, 15.632132]
+  [15:42:31 24.01.2016, 20.725037, 16.112747]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent4 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:32 24.01.2016: 
+ x: 42.880253 y: 24.516066
+ battery: 47
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 42.94347, 23.954704]
+  [15:42:31 24.01.2016, 42.707222, 23.567722]
+  [15:42:31 24.01.2016, 42.775143, 24.06068]
+  [15:42:32 24.01.2016, 43.20124, 24.47315]
+  [15:42:32 24.01.2016, 42.880253, 24.516066]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent1 TIMESTAMP: 15:42:33 24.01.2016: 
+ x: 100.39971 y: 24.091715
+ battery: 42
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 100.7099, 24.718428]
+  [15:42:31 24.01.2016, 101.0239, 24.503223]
+  [15:42:31 24.01.2016, 100.58551, 24.1214]
+  [15:42:32 24.01.2016, 100.10727, 23.886602]
+  [15:42:32 24.01.2016, 100.39971, 24.091715]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:33 24.01.2016: 
+ x: 71.90891 y: 70.43637
+ battery: 60
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 71.88037, 70.99723]
+  [15:42:31 24.01.2016, 71.49625, 70.63013]
+  [15:42:31 24.01.2016, 71.89909, 70.15749]
+  [15:42:32 24.01.2016, 71.949486, 70.47646]
+  [15:42:32 24.01.2016, 71.90891, 70.43637]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+
+agent4 TIMESTAMP: 15:42:33 24.01.2016: 
+ x: 20.039045 y: 16.397997
+ battery: 59
+ neighbors (3): agent3, agent1, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 20.424103, 15.833029]
+  [15:42:31 24.01.2016, 20.369745, 15.632132]
+  [15:42:31 24.01.2016, 20.725037, 16.112747]
+  [15:42:32 24.01.2016, 20.41384, 16.567173]
+  [15:42:32 24.01.2016, 20.039045, 16.397997]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent4 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:33 24.01.2016: 
+ x: 42.586468 y: 24.160713
+ battery: 46
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 42.94347, 23.954704]
+  [15:42:31 24.01.2016, 42.707222, 23.567722]
+  [15:42:31 24.01.2016, 42.775143, 24.06068]
+  [15:42:32 24.01.2016, 43.20124, 24.47315]
+  [15:42:32 24.01.2016, 42.880253, 24.516066]
+  [15:42:33 24.01.2016, 42.988903, 24.097015]
+  [15:42:33 24.01.2016, 42.586468, 24.160713]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent1 TIMESTAMP: 15:42:34 24.01.2016: 
+ x: 99.78228 y: 23.269083
+ battery: 41
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 100.7099, 24.718428]
+  [15:42:31 24.01.2016, 101.0239, 24.503223]
+  [15:42:31 24.01.2016, 100.58551, 24.1214]
+  [15:42:32 24.01.2016, 100.10727, 23.886602]
+  [15:42:32 24.01.2016, 100.39971, 24.091715]
+  [15:42:33 24.01.2016, 100.14438, 23.605309]
+  [15:42:33 24.01.2016, 99.78228, 23.269083]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent4 TIMESTAMP: 15:42:34 24.01.2016: 
+ x: 19.650328 y: 16.436731
+ battery: 58
+ neighbors (3): agent3, agent1, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 20.424103, 15.833029]
+  [15:42:31 24.01.2016, 20.369745, 15.632132]
+  [15:42:31 24.01.2016, 20.725037, 16.112747]
+  [15:42:32 24.01.2016, 20.41384, 16.567173]
+  [15:42:32 24.01.2016, 20.039045, 16.397997]
+  [15:42:33 24.01.2016, 19.620134, 16.357962]
+  [15:42:33 24.01.2016, 19.650328, 16.436731]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent4 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:34 24.01.2016: 
+ x: 71.67174 y: 70.10961
+ battery: 59
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 71.88037, 70.99723]
+  [15:42:31 24.01.2016, 71.49625, 70.63013]
+  [15:42:31 24.01.2016, 71.89909, 70.15749]
+  [15:42:32 24.01.2016, 71.949486, 70.47646]
+  [15:42:32 24.01.2016, 71.90891, 70.43637]
+  [15:42:33 24.01.2016, 72.0624, 70.32368]
+  [15:42:33 24.01.2016, 71.67174, 70.10961]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:34 24.01.2016: 
+ x: 42.61276 y: 24.51465
+ battery: 45
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 42.94347, 23.954704]
+  [15:42:31 24.01.2016, 42.707222, 23.567722]
+  [15:42:31 24.01.2016, 42.775143, 24.06068]
+  [15:42:32 24.01.2016, 43.20124, 24.47315]
+  [15:42:32 24.01.2016, 42.880253, 24.516066]
+  [15:42:33 24.01.2016, 42.988903, 24.097015]
+  [15:42:33 24.01.2016, 42.586468, 24.160713]
+  [15:42:34 24.01.2016, 42.511864, 24.505325]
+  [15:42:34 24.01.2016, 42.61276, 24.51465]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent1 TIMESTAMP: 15:42:35 24.01.2016: 
+ x: 100.29568 y: 23.889893
+ battery: 40
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 100.7099, 24.718428]
+  [15:42:31 24.01.2016, 101.0239, 24.503223]
+  [15:42:31 24.01.2016, 100.58551, 24.1214]
+  [15:42:32 24.01.2016, 100.10727, 23.886602]
+  [15:42:32 24.01.2016, 100.39971, 24.091715]
+  [15:42:33 24.01.2016, 100.14438, 23.605309]
+  [15:42:33 24.01.2016, 99.78228, 23.269083]
+  [15:42:34 24.01.2016, 99.87496, 23.483358]
+  [15:42:34 24.01.2016, 100.29568, 23.889893]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent4 TIMESTAMP: 15:42:35 24.01.2016: 
+ x: 19.58983 y: 16.172825
+ battery: 57
+ neighbors (3): agent3, agent1, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 20.424103, 15.833029]
+  [15:42:31 24.01.2016, 20.369745, 15.632132]
+  [15:42:31 24.01.2016, 20.725037, 16.112747]
+  [15:42:32 24.01.2016, 20.41384, 16.567173]
+  [15:42:32 24.01.2016, 20.039045, 16.397997]
+  [15:42:33 24.01.2016, 19.620134, 16.357962]
+  [15:42:33 24.01.2016, 19.650328, 16.436731]
+  [15:42:34 24.01.2016, 19.457417, 16.338339]
+  [15:42:34 24.01.2016, 19.58983, 16.172825]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent4 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:35 24.01.2016: 
+ x: 70.89577 y: 70.57851
+ battery: 58
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:30 24.01.2016, 71.88037, 70.99723]
+  [15:42:31 24.01.2016, 71.49625, 70.63013]
+  [15:42:31 24.01.2016, 71.89909, 70.15749]
+  [15:42:32 24.01.2016, 71.949486, 70.47646]
+  [15:42:32 24.01.2016, 71.90891, 70.43637]
+  [15:42:33 24.01.2016, 72.0624, 70.32368]
+  [15:42:33 24.01.2016, 71.67174, 70.10961]
+  [15:42:34 24.01.2016, 71.21578, 70.577995]
+  [15:42:34 24.01.2016, 70.89577, 70.57851]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:35 24.01.2016: 
+ x: 42.70611 y: 24.702599
+ battery: 44
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent1 TIMESTAMP: 15:42:36 24.01.2016: 
+ x: 100.52007 y: 23.79228
+ battery: 39
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:36 24.01.2016: 
+ x: 43.38118 y: 24.915745
+ battery: 43
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 43.045933, 24.459427]
+  [15:42:36 24.01.2016, 43.38118, 24.915745]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:36 24.01.2016: 
+ x: 70.91925 y: 71.01481
+ battery: 56
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 71.35021, 70.8307]
+  [15:42:36 24.01.2016, 70.91925, 71.01481]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+
+agent1 TIMESTAMP: 15:42:37 24.01.2016: 
+ x: 101.33067 y: 23.381157
+ battery: 38
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 100.99103, 23.821142]
+  [15:42:36 24.01.2016, 101.33067, 23.381157]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:37 24.01.2016: 
+ x: 43.682926 y: 24.69347
+ battery: 42
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 43.045933, 24.459427]
+  [15:42:36 24.01.2016, 43.38118, 24.915745]
+  [15:42:37 24.01.2016, 43.384678, 24.471012]
+  [15:42:37 24.01.2016, 43.682926, 24.69347]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:37 24.01.2016: 
+ x: 71.15079 y: 71.47657
+ battery: 55
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 71.35021, 70.8307]
+  [15:42:36 24.01.2016, 70.91925, 71.01481]
+  [15:42:37 24.01.2016, 71.344315, 71.3134]
+  [15:42:37 24.01.2016, 71.15079, 71.47657]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+
+agent1 TIMESTAMP: 15:42:38 24.01.2016: 
+ x: 101.29517 y: 23.295202
+ battery: 37
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 100.99103, 23.821142]
+  [15:42:36 24.01.2016, 101.33067, 23.381157]
+  [15:42:37 24.01.2016, 101.52677, 23.082342]
+  [15:42:37 24.01.2016, 101.29517, 23.295202]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:38 24.01.2016: 
+ x: 43.99979 y: 25.532906
+ battery: 41
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 43.045933, 24.459427]
+  [15:42:36 24.01.2016, 43.38118, 24.915745]
+  [15:42:37 24.01.2016, 43.384678, 24.471012]
+  [15:42:37 24.01.2016, 43.682926, 24.69347]
+  [15:42:38 24.01.2016, 43.538696, 25.188524]
+  [15:42:38 24.01.2016, 43.99979, 25.532906]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:38 24.01.2016: 
+ x: 70.98167 y: 71.419846
+ battery: 54
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 71.35021, 70.8307]
+  [15:42:36 24.01.2016, 70.91925, 71.01481]
+  [15:42:37 24.01.2016, 71.344315, 71.3134]
+  [15:42:37 24.01.2016, 71.15079, 71.47657]
+  [15:42:38 24.01.2016, 71.318184, 71.21154]
+  [15:42:38 24.01.2016, 70.98167, 71.419846]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+
+agent1 TIMESTAMP: 15:42:39 24.01.2016: 
+ x: 101.44675 y: 22.52112
+ battery: 36
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 100.99103, 23.821142]
+  [15:42:36 24.01.2016, 101.33067, 23.381157]
+  [15:42:37 24.01.2016, 101.52677, 23.082342]
+  [15:42:37 24.01.2016, 101.29517, 23.295202]
+  [15:42:38 24.01.2016, 101.777885, 22.946924]
+  [15:42:38 24.01.2016, 101.44675, 22.52112]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:39 24.01.2016: 
+ x: 44.07096 y: 25.665174
+ battery: 40
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 43.045933, 24.459427]
+  [15:42:36 24.01.2016, 43.38118, 24.915745]
+  [15:42:37 24.01.2016, 43.384678, 24.471012]
+  [15:42:37 24.01.2016, 43.682926, 24.69347]
+  [15:42:38 24.01.2016, 43.538696, 25.188524]
+  [15:42:38 24.01.2016, 43.99979, 25.532906]
+  [15:42:39 24.01.2016, 43.945904, 25.32925]
+  [15:42:39 24.01.2016, 44.07096, 25.665174]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:39 24.01.2016: 
+ x: 71.65171 y: 71.33486
+ battery: 53
+ neighbors (4): agent4, agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 71.35021, 70.8307]
+  [15:42:36 24.01.2016, 70.91925, 71.01481]
+  [15:42:37 24.01.2016, 71.344315, 71.3134]
+  [15:42:37 24.01.2016, 71.15079, 71.47657]
+  [15:42:38 24.01.2016, 71.318184, 71.21154]
+  [15:42:38 24.01.2016, 70.98167, 71.419846]
+  [15:42:39 24.01.2016, 71.461136, 71.22678]
+  [15:42:39 24.01.2016, 71.65171, 71.33486]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+
+Bat1 TIMESTAMP: 15:42:40 24.01.2016: 
+ x: 20.828426 y: 86.10721
+ battery: 6
+ neighbors (0): 
+ agent GPS [timestamp, latitude, longitude]:
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat2 TIMESTAMP: 15:42:40 24.01.2016: 
+ x: 35.42208 y: 87.49012
+ battery: 75
+ neighbors (0): 
+ agent GPS [timestamp, latitude, longitude]:
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat0 TIMESTAMP: 15:42:40 24.01.2016: 
+ x: 28.113651 y: 17.650467
+ battery: 22
+ neighbors (0): 
+ agent GPS [timestamp, latitude, longitude]:
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat3 TIMESTAMP: 15:42:40 24.01.2016: 
+ x: 28.800308 y: 98.64677
+ battery: 3
+ neighbors (0): 
+ agent GPS [timestamp, latitude, longitude]:
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent1 TIMESTAMP: 15:42:40 24.01.2016: 
+ x: 102.151665 y: 22.649466
+ battery: 35
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 100.99103, 23.821142]
+  [15:42:36 24.01.2016, 101.33067, 23.381157]
+  [15:42:37 24.01.2016, 101.52677, 23.082342]
+  [15:42:37 24.01.2016, 101.29517, 23.295202]
+  [15:42:38 24.01.2016, 101.777885, 22.946924]
+  [15:42:38 24.01.2016, 101.44675, 22.52112]
+  [15:42:39 24.01.2016, 101.92313, 22.98323]
+  [15:42:39 24.01.2016, 102.151665, 22.649466]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:40 24.01.2016: 
+ x: 43.3625 y: 26.059227
+ battery: 39
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 43.045933, 24.459427]
+  [15:42:36 24.01.2016, 43.38118, 24.915745]
+  [15:42:37 24.01.2016, 43.384678, 24.471012]
+  [15:42:37 24.01.2016, 43.682926, 24.69347]
+  [15:42:38 24.01.2016, 43.538696, 25.188524]
+  [15:42:38 24.01.2016, 43.99979, 25.532906]
+  [15:42:39 24.01.2016, 43.945904, 25.32925]
+  [15:42:39 24.01.2016, 44.07096, 25.665174]
+  [15:42:40 24.01.2016, 43.65101, 25.952877]
+  [15:42:40 24.01.2016, 43.3625, 26.059227]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:40 24.01.2016: 
+ x: 71.924736 y: 70.71833
+ battery: 52
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 71.35021, 70.8307]
+  [15:42:36 24.01.2016, 70.91925, 71.01481]
+  [15:42:37 24.01.2016, 71.344315, 71.3134]
+  [15:42:37 24.01.2016, 71.15079, 71.47657]
+  [15:42:38 24.01.2016, 71.318184, 71.21154]
+  [15:42:38 24.01.2016, 70.98167, 71.419846]
+  [15:42:39 24.01.2016, 71.461136, 71.22678]
+  [15:42:39 24.01.2016, 71.65171, 71.33486]
+  [15:42:40 24.01.2016, 71.849266, 71.16431]
+  [15:42:40 24.01.2016, 71.924736, 70.71833]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+
+Bat0 TIMESTAMP: 15:42:41 24.01.2016: 
+ x: 28.87387 y: 17.78044
+ battery: 21
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 28.577112, 17.83311]
+  [15:42:40 24.01.2016, 28.87387, 17.78044]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat2 TIMESTAMP: 15:42:41 24.01.2016: 
+ x: 35.588013 y: 88.19566
+ battery: 74
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 35.51484, 87.955826]
+  [15:42:40 24.01.2016, 35.588013, 88.19566]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat1 TIMESTAMP: 15:42:41 24.01.2016: 
+ x: 21.480707 y: 86.92949
+ battery: 5
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 21.192905, 86.47802]
+  [15:42:40 24.01.2016, 21.480707, 86.92949]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat3 TIMESTAMP: 15:42:41 24.01.2016: 
+ x: 28.900993 y: 98.534
+ battery: 2
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 28.960127, 98.88244]
+  [15:42:40 24.01.2016, 28.900993, 98.534]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent1 TIMESTAMP: 15:42:41 24.01.2016: 
+ x: 102.25434 y: 22.56925
+ battery: 34
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:36 24.01.2016, 100.99103, 23.821142]
+  [15:42:36 24.01.2016, 101.33067, 23.381157]
+  [15:42:37 24.01.2016, 101.52677, 23.082342]
+  [15:42:37 24.01.2016, 101.29517, 23.295202]
+  [15:42:38 24.01.2016, 101.777885, 22.946924]
+  [15:42:38 24.01.2016, 101.44675, 22.52112]
+  [15:42:39 24.01.2016, 101.92313, 22.98323]
+  [15:42:39 24.01.2016, 102.151665, 22.649466]
+  [15:42:40 24.01.2016, 102.29175, 22.59003]
+  [15:42:40 24.01.2016, 102.25434, 22.56925]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:41 24.01.2016: 
+ x: 44.194145 y: 26.145924
+ battery: 38
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 44.194145, 26.145924]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:41 24.01.2016: 
+ x: 72.06002 y: 70.53171
+ battery: 51
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 72.06002, 70.53171]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+
+Bat0 TIMESTAMP: 15:42:42 24.01.2016: 
+ x: 28.42464 y: 17.997871
+ battery: 20
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 28.577112, 17.83311]
+  [15:42:40 24.01.2016, 28.87387, 17.78044]
+  [15:42:41 24.01.2016, 28.602825, 17.960007]
+  [15:42:41 24.01.2016, 28.42464, 17.997871]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat2 TIMESTAMP: 15:42:42 24.01.2016: 
+ x: 35.672504 y: 87.80412
+ battery: 73
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 35.51484, 87.955826]
+  [15:42:40 24.01.2016, 35.588013, 88.19566]
+  [15:42:41 24.01.2016, 35.28021, 87.908226]
+  [15:42:41 24.01.2016, 35.672504, 87.80412]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat1 TIMESTAMP: 15:42:42 24.01.2016: 
+ x: 22.021767 y: 86.95877
+ battery: 4
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 21.192905, 86.47802]
+  [15:42:40 24.01.2016, 21.480707, 86.92949]
+  [15:42:41 24.01.2016, 21.547342, 86.5544]
+  [15:42:41 24.01.2016, 22.021767, 86.95877]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat3 TIMESTAMP: 15:42:42 24.01.2016: 
+ x: 29.896582 y: 98.09664
+ battery: 1
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 28.960127, 98.88244]
+  [15:42:40 24.01.2016, 28.900993, 98.534]
+  [15:42:41 24.01.2016, 29.397179, 98.5834]
+  [15:42:41 24.01.2016, 29.896582, 98.09664]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent1 TIMESTAMP: 15:42:42 24.01.2016: 
+ x: 102.44378 y: 21.912235
+ battery: 33
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 102.44378, 21.912235]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:42 24.01.2016: 
+ x: 44.151352 y: 26.2792
+ battery: 37
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 44.194145, 26.145924]
+  [15:42:42 24.01.2016, 44.244305, 26.62332]
+  [15:42:42 24.01.2016, 44.151352, 26.2792]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:42 24.01.2016: 
+ x: 72.04655 y: 70.56367
+ battery: 50
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 72.06002, 70.53171]
+  [15:42:42 24.01.2016, 72.23137, 70.618576]
+  [15:42:42 24.01.2016, 72.04655, 70.56367]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+
+Bat0 TIMESTAMP: 15:42:43 24.01.2016: 
+ x: 28.55183 y: 18.241093
+ battery: 19
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 28.577112, 17.83311]
+  [15:42:40 24.01.2016, 28.87387, 17.78044]
+  [15:42:41 24.01.2016, 28.602825, 17.960007]
+  [15:42:41 24.01.2016, 28.42464, 17.997871]
+  [15:42:42 24.01.2016, 28.651293, 17.852444]
+  [15:42:42 24.01.2016, 28.55183, 18.241093]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat2 TIMESTAMP: 15:42:43 24.01.2016: 
+ x: 36.02562 y: 87.90471
+ battery: 72
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 35.51484, 87.955826]
+  [15:42:40 24.01.2016, 35.588013, 88.19566]
+  [15:42:41 24.01.2016, 35.28021, 87.908226]
+  [15:42:41 24.01.2016, 35.672504, 87.80412]
+  [15:42:42 24.01.2016, 35.97701, 87.56146]
+  [15:42:42 24.01.2016, 36.02562, 87.90471]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat1 TIMESTAMP: 15:42:43 24.01.2016: 
+ x: 21.767586 y: 87.22642
+ battery: 3
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 21.192905, 86.47802]
+  [15:42:40 24.01.2016, 21.480707, 86.92949]
+  [15:42:41 24.01.2016, 21.547342, 86.5544]
+  [15:42:41 24.01.2016, 22.021767, 86.95877]
+  [15:42:42 24.01.2016, 22.23211, 87.393005]
+  [15:42:42 24.01.2016, 21.767586, 87.22642]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat3 TIMESTAMP: 15:42:43 24.01.2016: 
+ x: 29.281425 y: 97.63962
+ battery: 0
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 28.960127, 98.88244]
+  [15:42:40 24.01.2016, 28.900993, 98.534]
+  [15:42:41 24.01.2016, 29.397179, 98.5834]
+  [15:42:41 24.01.2016, 29.896582, 98.09664]
+  [15:42:42 24.01.2016, 29.667059, 97.71295]
+  [15:42:42 24.01.2016, 29.281425, 97.63962]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent1 TIMESTAMP: 15:42:43 24.01.2016: 
+ x: 102.97808 y: 22.069492
+ battery: 32
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 102.44378, 21.912235]
+  [15:42:42 24.01.2016, 102.7928, 21.855095]
+  [15:42:42 24.01.2016, 102.97808, 22.069492]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:43 24.01.2016: 
+ x: 44.35204 y: 26.546589
+ battery: 36
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 44.194145, 26.145924]
+  [15:42:42 24.01.2016, 44.244305, 26.62332]
+  [15:42:42 24.01.2016, 44.151352, 26.2792]
+  [15:42:43 24.01.2016, 43.975254, 26.57488]
+  [15:42:43 24.01.2016, 44.35204, 26.546589]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:43 24.01.2016: 
+ x: 72.54515 y: 70.37399
+ battery: 49
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 72.06002, 70.53171]
+  [15:42:42 24.01.2016, 72.23137, 70.618576]
+  [15:42:42 24.01.2016, 72.04655, 70.56367]
+  [15:42:43 24.01.2016, 72.52495, 70.45271]
+  [15:42:43 24.01.2016, 72.54515, 70.37399]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+
+Bat0 TIMESTAMP: 15:42:44 24.01.2016: 
+ x: 28.960224 y: 17.730518
+ battery: 18
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 28.577112, 17.83311]
+  [15:42:40 24.01.2016, 28.87387, 17.78044]
+  [15:42:41 24.01.2016, 28.602825, 17.960007]
+  [15:42:41 24.01.2016, 28.42464, 17.997871]
+  [15:42:42 24.01.2016, 28.651293, 17.852444]
+  [15:42:42 24.01.2016, 28.55183, 18.241093]
+  [15:42:43 24.01.2016, 28.782015, 17.792948]
+  [15:42:43 24.01.2016, 28.960224, 17.730518]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat2 TIMESTAMP: 15:42:44 24.01.2016: 
+ x: 35.970516 y: 87.98864
+ battery: 71
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 35.51484, 87.955826]
+  [15:42:40 24.01.2016, 35.588013, 88.19566]
+  [15:42:41 24.01.2016, 35.28021, 87.908226]
+  [15:42:41 24.01.2016, 35.672504, 87.80412]
+  [15:42:42 24.01.2016, 35.97701, 87.56146]
+  [15:42:42 24.01.2016, 36.02562, 87.90471]
+  [15:42:43 24.01.2016, 36.106915, 88.19457]
+  [15:42:43 24.01.2016, 35.970516, 87.98864]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat1 TIMESTAMP: 15:42:44 24.01.2016: 
+ x: 22.434088 y: 87.4876
+ battery: 2
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 21.192905, 86.47802]
+  [15:42:40 24.01.2016, 21.480707, 86.92949]
+  [15:42:41 24.01.2016, 21.547342, 86.5544]
+  [15:42:41 24.01.2016, 22.021767, 86.95877]
+  [15:42:42 24.01.2016, 22.23211, 87.393005]
+  [15:42:42 24.01.2016, 21.767586, 87.22642]
+  [15:42:43 24.01.2016, 22.048634, 87.35053]
+  [15:42:43 24.01.2016, 22.434088, 87.4876]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat3 TIMESTAMP: 15:42:44 24.01.2016: 
+ x: 29.406883 y: 97.96017
+ battery: 0
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 28.960127, 98.88244]
+  [15:42:40 24.01.2016, 28.900993, 98.534]
+  [15:42:41 24.01.2016, 29.397179, 98.5834]
+  [15:42:41 24.01.2016, 29.896582, 98.09664]
+  [15:42:42 24.01.2016, 29.667059, 97.71295]
+  [15:42:42 24.01.2016, 29.281425, 97.63962]
+  [15:42:43 24.01.2016, 28.915916, 97.94464]
+  [15:42:43 24.01.2016, 29.406883, 97.96017]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent1 TIMESTAMP: 15:42:44 24.01.2016: 
+ x: 103.406006 y: 21.81055
+ battery: 31
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 102.44378, 21.912235]
+  [15:42:42 24.01.2016, 102.7928, 21.855095]
+  [15:42:42 24.01.2016, 102.97808, 22.069492]
+  [15:42:43 24.01.2016, 103.45848, 22.256304]
+  [15:42:43 24.01.2016, 103.406006, 21.81055]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:44 24.01.2016: 
+ x: 44.312656 y: 26.313536
+ battery: 35
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 44.194145, 26.145924]
+  [15:42:42 24.01.2016, 44.244305, 26.62332]
+  [15:42:42 24.01.2016, 44.151352, 26.2792]
+  [15:42:43 24.01.2016, 43.975254, 26.57488]
+  [15:42:43 24.01.2016, 44.35204, 26.546589]
+  [15:42:44 24.01.2016, 44.717804, 26.605976]
+  [15:42:44 24.01.2016, 44.312656, 26.313536]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:44 24.01.2016: 
+ x: 72.839806 y: 69.92398
+ battery: 48
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 72.06002, 70.53171]
+  [15:42:42 24.01.2016, 72.23137, 70.618576]
+  [15:42:42 24.01.2016, 72.04655, 70.56367]
+  [15:42:43 24.01.2016, 72.52495, 70.45271]
+  [15:42:43 24.01.2016, 72.54515, 70.37399]
+  [15:42:44 24.01.2016, 72.91252, 69.96488]
+  [15:42:44 24.01.2016, 72.839806, 69.92398]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+
+Bat0 TIMESTAMP: 15:42:45 24.01.2016: 
+ x: 29.542435 y: 17.839512
+ battery: 17
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 28.577112, 17.83311]
+  [15:42:40 24.01.2016, 28.87387, 17.78044]
+  [15:42:41 24.01.2016, 28.602825, 17.960007]
+  [15:42:41 24.01.2016, 28.42464, 17.997871]
+  [15:42:42 24.01.2016, 28.651293, 17.852444]
+  [15:42:42 24.01.2016, 28.55183, 18.241093]
+  [15:42:43 24.01.2016, 28.782015, 17.792948]
+  [15:42:43 24.01.2016, 28.960224, 17.730518]
+  [15:42:44 24.01.2016, 29.058754, 18.200562]
+  [15:42:44 24.01.2016, 29.542435, 17.839512]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat2 TIMESTAMP: 15:42:45 24.01.2016: 
+ x: 35.671608 y: 87.56963
+ battery: 70
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 35.51484, 87.955826]
+  [15:42:40 24.01.2016, 35.588013, 88.19566]
+  [15:42:41 24.01.2016, 35.28021, 87.908226]
+  [15:42:41 24.01.2016, 35.672504, 87.80412]
+  [15:42:42 24.01.2016, 35.97701, 87.56146]
+  [15:42:42 24.01.2016, 36.02562, 87.90471]
+  [15:42:43 24.01.2016, 36.106915, 88.19457]
+  [15:42:43 24.01.2016, 35.970516, 87.98864]
+  [15:42:44 24.01.2016, 35.986233, 87.87354]
+  [15:42:44 24.01.2016, 35.671608, 87.56963]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat1 TIMESTAMP: 15:42:45 24.01.2016: 
+ x: 22.862436 y: 87.366325
+ battery: 1
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 21.192905, 86.47802]
+  [15:42:40 24.01.2016, 21.480707, 86.92949]
+  [15:42:41 24.01.2016, 21.547342, 86.5544]
+  [15:42:41 24.01.2016, 22.021767, 86.95877]
+  [15:42:42 24.01.2016, 22.23211, 87.393005]
+  [15:42:42 24.01.2016, 21.767586, 87.22642]
+  [15:42:43 24.01.2016, 22.048634, 87.35053]
+  [15:42:43 24.01.2016, 22.434088, 87.4876]
+  [15:42:44 24.01.2016, 22.89012, 87.00346]
+  [15:42:44 24.01.2016, 22.862436, 87.366325]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+Bat3 TIMESTAMP: 15:42:45 24.01.2016: 
+ x: 29.279785 y: 97.415016
+ battery: 0
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:40 24.01.2016, 28.960127, 98.88244]
+  [15:42:40 24.01.2016, 28.900993, 98.534]
+  [15:42:41 24.01.2016, 29.397179, 98.5834]
+  [15:42:41 24.01.2016, 29.896582, 98.09664]
+  [15:42:42 24.01.2016, 29.667059, 97.71295]
+  [15:42:42 24.01.2016, 29.281425, 97.63962]
+  [15:42:43 24.01.2016, 28.915916, 97.94464]
+  [15:42:43 24.01.2016, 29.406883, 97.96017]
+  [15:42:44 24.01.2016, 29.532223, 97.87496]
+  [15:42:44 24.01.2016, 29.279785, 97.415016]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+
+agent1 TIMESTAMP: 15:42:45 24.01.2016: 
+ x: 103.7665 y: 22.03056
+ battery: 30
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 102.44378, 21.912235]
+  [15:42:42 24.01.2016, 102.7928, 21.855095]
+  [15:42:42 24.01.2016, 102.97808, 22.069492]
+  [15:42:43 24.01.2016, 103.45848, 22.256304]
+  [15:42:43 24.01.2016, 103.406006, 21.81055]
+  [15:42:44 24.01.2016, 103.58446, 21.642326]
+  [15:42:44 24.01.2016, 103.7665, 22.03056]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+  [agent1 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:45 24.01.2016: 
+ x: 44.71083 y: 26.598671
+ battery: 34
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 44.194145, 26.145924]
+  [15:42:42 24.01.2016, 44.244305, 26.62332]
+  [15:42:42 24.01.2016, 44.151352, 26.2792]
+  [15:42:43 24.01.2016, 43.975254, 26.57488]
+  [15:42:43 24.01.2016, 44.35204, 26.546589]
+  [15:42:44 24.01.2016, 44.717804, 26.605976]
+  [15:42:44 24.01.2016, 44.312656, 26.313536]
+  [15:42:45 24.01.2016, 44.230038, 26.503265]
+  [15:42:45 24.01.2016, 44.71083, 26.598671]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:45 24.01.2016: 
+ x: 72.790054 y: 69.58672
+ battery: 47
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:41 24.01.2016, 72.06002, 70.53171]
+  [15:42:42 24.01.2016, 72.23137, 70.618576]
+  [15:42:42 24.01.2016, 72.04655, 70.56367]
+  [15:42:43 24.01.2016, 72.52495, 70.45271]
+  [15:42:43 24.01.2016, 72.54515, 70.37399]
+  [15:42:44 24.01.2016, 72.91252, 69.96488]
+  [15:42:44 24.01.2016, 72.839806, 69.92398]
+  [15:42:45 24.01.2016, 72.704124, 70.00611]
+  [15:42:45 24.01.2016, 72.790054, 69.58672]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+
+Bat0 TIMESTAMP: 15:42:46 24.01.2016: 
+ x: 28.83593 y: 18.17415
+ battery: 16
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:45 24.01.2016, 28.83593, 18.17415]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [Bat0 (0) 
+   {
+   }
+  ]
+
+Bat2 TIMESTAMP: 15:42:46 24.01.2016: 
+ x: 35.761967 y: 88.029144
+ battery: 69
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:45 24.01.2016, 35.761967, 88.029144]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [Bat2 (0) 
+   {
+   }
+  ]
+
+Bat1 TIMESTAMP: 15:42:46 24.01.2016: 
+ x: 22.963432 y: 87.04848
+ battery: 0
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:45 24.01.2016, 22.963432, 87.04848]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [Bat1 (0) 
+   {
+   }
+  ]
+
+Bat3 TIMESTAMP: 15:42:46 24.01.2016: 
+ x: 29.555424 y: 97.11708
+ battery: 0
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:45 24.01.2016, 29.555424, 97.11708]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [Bat3 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:46 24.01.2016: 
+ x: 44.6435 y: 26.483746
+ battery: 33
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:46 24.01.2016: 
+ x: 72.64138 y: 69.61496
+ battery: 46
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+
+Bat0 TIMESTAMP: 15:42:47 24.01.2016: 
+ x: 28.371586 y: 17.887875
+ battery: 15
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:45 24.01.2016, 28.83593, 18.17415]
+  [15:42:46 24.01.2016, 28.69249, 18.125767]
+  [15:42:46 24.01.2016, 28.371586, 17.887875]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [Bat0 (0) 
+   {
+   }
+  ]
+
+Bat2 TIMESTAMP: 15:42:47 24.01.2016: 
+ x: 36.030594 y: 87.62106
+ battery: 68
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:45 24.01.2016, 35.761967, 88.029144]
+  [15:42:46 24.01.2016, 35.97895, 87.925026]
+  [15:42:46 24.01.2016, 36.030594, 87.62106]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [Bat2 (0) 
+   {
+   }
+  ]
+
+Bat1 TIMESTAMP: 15:42:47 24.01.2016: 
+ x: 22.733477 y: 86.98915
+ battery: 0
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:45 24.01.2016, 22.963432, 87.04848]
+  [15:42:46 24.01.2016, 22.962124, 87.34685]
+  [15:42:46 24.01.2016, 22.733477, 86.98915]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [Bat1 (0) 
+   {
+   }
+  ]
+
+Bat3 TIMESTAMP: 15:42:47 24.01.2016: 
+ x: 29.688038 y: 96.99227
+ battery: 0
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:45 24.01.2016, 29.555424, 97.11708]
+  [15:42:46 24.01.2016, 29.615112, 96.66873]
+  [15:42:46 24.01.2016, 29.688038, 96.99227]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [Bat3 (0) 
+   {
+   }
+  ]
+
+agent3 TIMESTAMP: 15:42:47 24.01.2016: 
+ x: 45.192837 y: 25.93622
+ battery: 32
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:47 24.01.2016, 44.726135, 26.243486]
+  [15:42:47 24.01.2016, 45.192837, 25.93622]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+  [agent3 (0) 
+   {
+   }
+  ]
+
+agent2 TIMESTAMP: 15:42:47 24.01.2016: 
+ x: 72.57004 y: 70.00432
+ battery: 45
+ neighbors (8): agent4, agent1, agent3, agent2, Bat3, Bat0, Bat2, Bat1
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:47 24.01.2016, 72.211876, 69.72576]
+  [15:42:47 24.01.2016, 72.57004, 70.00432]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+  [agent2 (0) 
+   {
+   }
+  ]
+
+Bat0 TIMESTAMP: 15:42:48 24.01.2016: 
+ x: 28.569078 y: 18.43073
+ battery: 14
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:45 24.01.2016, 28.83593, 18.17415]
+  [15:42:46 24.01.2016, 28.69249, 18.125767]
+  [15:42:46 24.01.2016, 28.371586, 17.887875]
+  [15:42:47 24.01.2016, 28.498354, 18.045084]
+  [15:42:47 24.01.2016, 28.569078, 18.43073]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [Bat0 (0) 
+   {
+   }
+  ]
+
+Bat2 TIMESTAMP: 15:42:48 24.01.2016: 
+ x: 36.285057 y: 87.81518
+ battery: 67
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:45 24.01.2016, 35.761967, 88.029144]
+  [15:42:46 24.01.2016, 35.97895, 87.925026]
+  [15:42:46 24.01.2016, 36.030594, 87.62106]
+  [15:42:47 24.01.2016, 36.179775, 87.98397]
+  [15:42:47 24.01.2016, 36.285057, 87.81518]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [Bat2 (0) 
+   {
+   }
+  ]
+
+Bat1 TIMESTAMP: 15:42:48 24.01.2016: 
+ x: 23.333849 y: 87.410416
+ battery: 0
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:45 24.01.2016, 22.963432, 87.04848]
+  [15:42:46 24.01.2016, 22.962124, 87.34685]
+  [15:42:46 24.01.2016, 22.733477, 86.98915]
+  [15:42:47 24.01.2016, 23.0972, 87.19401]
+  [15:42:47 24.01.2016, 23.333849, 87.410416]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [Bat1 (0) 
+   {
+   }
+  ]
+
+Bat3 TIMESTAMP: 15:42:48 24.01.2016: 
+ x: 29.355057 y: 97.39218
+ battery: 0
+ neighbors (3): agent1, agent3, agent2
+ agent GPS [timestamp, latitude, longitude]:
+  [15:42:45 24.01.2016, 29.555424, 97.11708]
+  [15:42:46 24.01.2016, 29.615112, 96.66873]
+  [15:42:46 24.01.2016, 29.688038, 96.99227]
+  [15:42:47 24.01.2016, 29.585344, 97.15163]
+  [15:42:47 24.01.2016, 29.355057, 97.39218]
+ agent GPS packeges [owner (<gps entry size>) {[timestamp, latitude, longitude]}]:
+  [Bat3 (0) 
+   {
+   }
+  ]
+

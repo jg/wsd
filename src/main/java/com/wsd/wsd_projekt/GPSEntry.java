@@ -1,8 +1,9 @@
 package com.wsd.wsd_projekt;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class GPSEntry {
+public class GPSEntry implements Serializable {
 	private float lat,lng;
 	private Date time;
 	

@@ -50,7 +50,7 @@ public class BatTracker extends Agent {
 	}
 
     public State getCustomState() {
-        return new State(getName(), battery);
+    	return new State(getName(), this.x, this.y, this.battery, this.neighbors, this.gps, this.packages);
     }
 
     /** Decrease battery level */
@@ -132,13 +132,13 @@ public class BatTracker extends Agent {
         addBehaviour(new SendAgentStateBehaviour(this, new Long(1000)));
 
 		//symulacja dzialania nadajnika - rejestrowanie zmieniajacej sie pozycji
-        // addBehaviour(new SendGpsDataBehaviour(this, new Long(1000)));
+        addBehaviour(new SendGpsDataBehaviour(this, new Long(1000)));
 
         //zachowanie odpowiedzialne za obsluge wiadomosci 'Hello' i odbieranie danych
-        // addBehaviour(new HandleIncomingMessagesBehaviour(this));
+        addBehaviour(new HandleIncomingMessagesBehaviour(this));
 
 		//cykliczne wysylanie wiadmosci 'Hello'
-		// addBehaviour(new SendHelloBehaviour(this, new Long(1000)));
+		addBehaviour(new SendHelloBehaviour(this, new Long(1000)));
         
         MessageTemplate template = MessageTemplate.and(
         		MessageTemplate.MatchProtocol(FIPANames.InteractionProtocol.FIPA_CONTRACT_NET),

@@ -20,7 +20,7 @@ public class SendHelloBehaviour extends TickerBehaviour {
         ACLMessage m = new ACLMessage(ACLMessage.INFORM);
         //obecnie wysylane do wszystkich
         for(int i=0;i<4;i++){
-            String name = "Bat"+i+"@192.168.0.12:1099/JADE";
+            String name = "agent"+i+"@192.168.122.1:1099/JADE";
             if (name != agent.getName()) {
                 m.addReceiver(new AID(name, AID.ISGUID));
             }
